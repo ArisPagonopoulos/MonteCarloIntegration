@@ -25,7 +25,7 @@ def pie_image(n):
  ax.scatter(red_x,red_y,color="red",s=1.3,marker="o",alpha=a,label="points out of the circle")
  ax.set_xlabel("x")
  ax.set_ylabel("y")
- ax.set_title("{} Random Points".format(n))
+ ax.set_title("Pi approximation of {} random numbers is {} \n".format(n,(len(green_x)/n)*4).format(n))
  ax.legend()
  print("Pi approximation of {} random numbers is {} \n".format(n,(len(green_x)/n)*4))
  print("Took %s seconds to complete with size %d" %(round(perf_counter(),4)-start,n))
